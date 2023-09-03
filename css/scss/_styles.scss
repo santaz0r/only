@@ -1,0 +1,32 @@
+.map {
+    position: relative;
+    max-width: 1920px;
+    &__background {
+        height: auto;
+        max-width: 100%;
+        filter: brightness(60%)
+    }
+
+}
+
+
+.circle {
+    position: absolute;
+   width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 0.7;
+    z-index: 10;
+    &.green {
+        background-color: $color_green;
+    }
+    &.blue {
+        background-color: $color_blue;
+    }
+
+}
+
