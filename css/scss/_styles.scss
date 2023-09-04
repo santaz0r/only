@@ -12,7 +12,7 @@
 
 .circle {
     position: absolute;
-   width: 41px;
+    width: 41px;
     height: 41px;
     border-radius: 50%;
     display: flex;
@@ -21,6 +21,24 @@
     color: white;
     opacity: 0.7;
     z-index: 10;
+    padding-left: 15px;
+    font-weight: bold;
+    transition: all 0.1s linear;
+    &.open {
+        width: 113px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        padding: 19px 15px;
+        
+        div {
+            font-weight: normal;
+            display: block;
+            width: 100%;
+            scale: 1;
+            transition: all 0.1s linear;
+        }
+    }
     &.green {
         background-color: $color_green;
     }
@@ -28,5 +46,12 @@
         background-color: $color_blue;
     }
 
+    div {
+    //    display: none; 
+        width: 0;
+        scale: 0;
+        margin-left: 15px;
+        transition: all 0.1s linear;
+    }
 }
 
