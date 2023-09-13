@@ -1,9 +1,9 @@
 .map {
   position: relative;
-  max-width: 1920px;
+  width: 97vw;
   &__background {
     height: 100vh;
-    max-width: 100%;
+    width: 97vw;
     filter: brightness(60%);
   }
 }
