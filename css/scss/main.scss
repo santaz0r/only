@@ -1,10 +1,9 @@
-*{
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
- 
- @import '../scss/vars';
 
+@import "../scss/vars";
 
- @import '../scss/styles';
- @import '../scss/coordinates';
+@import "../scss/styles";
+@import "../scss/coordinates";
