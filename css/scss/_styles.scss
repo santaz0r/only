@@ -1,57 +1,54 @@
 .map {
-    position: relative;
-    max-width: 1920px;
-    &__background {
-        height: auto;
-        max-width: 100%;
-        filter: brightness(60%)
-    }
-
+  position: relative;
+  width: 99vw;
+  &__background {
+    height: 100vh;
+    width: 99vw;
+    filter: brightness(60%);
+  }
 }
-
 
 .circle {
-    cursor: pointer;
-    position: absolute;
-    width: 41px;
-    height: 41px;
-    border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  opacity: 0.7;
+  z-index: 10;
+  padding-left: 15px;
+  font-weight: bold;
+  transition: all 0.1s linear;
+  &.open {
+    width: 113px;
+    border-radius: 15px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    color: white;
-    opacity: 0.7;
-    z-index: 10;
-    padding-left: 15px;
-    font-weight: bold;
-    transition: all 0.1s linear;
-    &.open {
-        width: 113px;
-        border-radius: 15px;
-        display: flex;
-        justify-content: center;
-        padding: 19px 15px;
-        
-        div {
-            font-weight: normal;
-            display: block;
-            width: 100%;
-            scale: 1;
-            transition: all 0.1s linear;
-        }
-    }
-    &.green {
-        background-color: $color_green;
-    }
-    &.blue {
-        background-color: $color_blue;
-    }
+    padding: 19px 15px;
 
     div {
-        width: 0;
-        scale: 0;
-        margin-left: 15px;
-        transition: all 0.1s linear;
+      font-weight: normal;
+      display: block;
+      width: 100%;
+      scale: 1;
+      transition: all 0.1s linear;
     }
-}
+  }
+  &.green {
+    background-color: $color_green;
+  }
+  &.blue {
+    background-color: $color_blue;
+  }
 
+  div {
+    width: 0;
+    scale: 0;
+    margin-left: 15px;
+    transition: all 0.1s linear;
+  }
+}
