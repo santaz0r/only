@@ -4,6 +4,10 @@
   margin: 0;
 }
 
+body {
+  overflow: hidden;
+}
+
 @import "../scss/mixins";
 
 @import "../scss/styles";
